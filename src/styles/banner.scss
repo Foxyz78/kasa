@@ -1,0 +1,41 @@
+@import "color.scss";
+
+.banner-img {
+  object-fit: cover;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  mix-blend-mode: darken;
+}
+
+.banner {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  h2 {
+    margin: 0;
+    font-size: 48px;
+    color: $font;
+    font-family: Montserrat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    width: 90%;
+    margin: 0;
+    h2 {
+      width: 217px;
+      font-size: 24px;
+    }
+    .banner-img {
+      height: 100%;
+    }
+  }
+}

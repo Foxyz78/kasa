@@ -1,0 +1,65 @@
+@import "color.scss";
+
+header {
+  display: flex;
+  margin: 45px 0 50px 0;
+  justify-content: center;
+}
+.navLinks {
+  width: 1240px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      color: $primary;
+      font-size: 24px;
+      font-family: Montserrat;
+      font-weight: 500;
+    }
+    li:nth-child(2) {
+      margin-left: auto;
+      margin-right: 57px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+.activeLink {
+  text-decoration: underline;
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .navLinks {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 90%;
+    margin: 20px auto 27px auto;
+  }
+  .navLinks {
+    width: 100%;
+    margin: 0;
+    a {
+      font-size: 12px;
+    }
+    ul {
+      align-items: center;
+      .navbar-logo {
+        width: 145px;
+      }
+    }
+  }
+}
